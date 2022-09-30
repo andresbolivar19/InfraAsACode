@@ -9,4 +9,5 @@ phases:
     commands:
       - ls -l ./
       #- terraform apply -var-file="dev-app.tfvars" -var="createdBy=e2esa" --auto-approve
-      - terraform apply --auto-approve --var-file=.dev-app.tfvars
+      #- terraform apply --auto-approve --var-file=.dev-app.tfvars
+      - terraform apply --auto-approve

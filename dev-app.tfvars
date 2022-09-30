@@ -1,5 +1,3 @@
-# terraform apply -var-file="dev-app.tfvars"
-
 # Common
 project = "InfraAsACode"
 
