@@ -10,4 +10,4 @@ phases:
       - ls -l ./
       - ls -l ./dev-app.tfvars
       - terraform apply -auto-approve -var-file="../../variables/dev-app.tfvars"
-      #- terraform apply --auto-approve --var-file=./dev-app.tfvars
+      #- terraform apply --auto-approve --var-file=./dev-app.tfvars 
