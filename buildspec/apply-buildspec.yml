@@ -4,7 +4,6 @@ phases:
     commands:
       - terraform init
       - terraform validate
-      - terraform plan -var-file="./dev-app.tfvars"
   
   build:
     commands:
