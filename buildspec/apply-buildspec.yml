@@ -8,4 +8,5 @@ phases:
   build:
     commands:
       - ls -l ./
-      - terraform apply --auto-approve --var-file=dev-app.tfvars
+      - ls -l ./dev-app.tfvars
+      - terraform apply --auto-approve --var-file=./dev-app.tfvars
