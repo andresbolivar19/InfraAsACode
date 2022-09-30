@@ -9,7 +9,7 @@ locals {
 
 module "ec2" {
   ami               = var.ami
-  availability_zone = var.availability_zone
+  #availability_zone = var.availability_zone
   tags              = local.tags
   instance_type     = var.instance_type
 }
