@@ -4,10 +4,11 @@ phases:
     commands:
       - terraform init
       - terraform validate
+      - terraform plan
   
   build:
     commands:
       - ls -l ./
       - ls -l ./dev-app.tfvars
-      - terraform apply -var-file="dev-app.tfvars" -var="createdBy=AFBN" -auto-approve
+      - terraform apply -var-file="./dev-app.tfvars" -var="createdBy=AFBN" -auto-approve
       #- terraform apply --auto-approve --var-file=./dev-app.tfvars
