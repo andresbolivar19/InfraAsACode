@@ -7,4 +7,6 @@ phases:
   
   build:
     commands:
-      - terraform apply -var-file="dev-app.tfvars" -var="createdBy=AFBN" --auto-approve
+      - ls -l ./
+      #- terraform apply -var-file="dev-app.tfvars" -var="createdBy=e2esa" --auto-approve
+      - terraform apply --auto-approve --var-file=.dev-app.tfvars
