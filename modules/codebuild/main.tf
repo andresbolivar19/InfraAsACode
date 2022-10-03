@@ -30,17 +30,17 @@ resource "aws_codebuild_project" "this" {
   }
 
   # Make sure the group name and stream names exist
-  logs_config {
-    cloudwatch_logs {
-      group_name  = var.cw_group_name
-      stream_name = var.cw_stream_name
-    }
+  # logs_config {
+  #   cloudwatch_logs {
+  #     group_name  = var.cw_group_name
+  #     stream_name = var.cw_stream_name
+  #   }
 
     # s3_logs {
     #   status   = var.s3_logs_status
     #   location = "${var.s3_bucket_id}/build-log"
     # }
-  }
+  # }
 
   source {
     type                = var.source_type
