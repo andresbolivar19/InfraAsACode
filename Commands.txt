@@ -1,0 +1,4 @@
+terraform init
+terraform apply -var-file="dev-app.tfvars" -var="createdBy=AFBN" -auto-approve
+aws s3 rm s3://infraasacode-tf-codepipeline --recursive
+rm -rf .terraform* terraform.tfstate*

@@ -34,4 +34,4 @@ source_location              = "./modules/ec2"
 s3_bucket_id       = "infraasacode-tf-codepipeline"
 full_repository_id = "andresbolivar19/InfraAsACode"
 #codestar_connector_credentials="arn:aws:codestar-connections:us-east-2:######:connection/######"
-codestar_connector_credentials="arn:aws:codestar-connections:us-east-2:300751704770:connection/c59fa8db-f674-402c-b47a-d642bd7def6b"
+codestar_connector_credentials= ${{ secrets.AWS_GITHUB_CONNECTOR }}
